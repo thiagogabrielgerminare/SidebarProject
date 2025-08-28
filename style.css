@@ -1,0 +1,31 @@
+body{
+    background-color: papayawhip;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#menuLateral{
+    background-color: #add8e6;
+    width: 300px;
+    height: 100vh;
+    padding: 20px;
+}
+
+#menuLateral p{
+    cursor: pointer;
+}
+
+#menuLateral p:hover{
+    color: red;
+}
+
+#titulo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#fechar{
+    cursor: pointer;
+}
