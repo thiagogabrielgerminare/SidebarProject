@@ -10,6 +10,8 @@ body{
     width: 300px;
     height: 100vh;
     padding: 20px;
+    position: absolute;
+    display: none;
 }
 
 #menuLateral p{
@@ -26,6 +28,18 @@ body{
     align-items: center;
 }
 
-#fechar{
+#abrir, #fechar{
     cursor: pointer;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightgray;
+    padding: 0px 20px;
+}
+
+header h2{
+    color: yellow;
 }
