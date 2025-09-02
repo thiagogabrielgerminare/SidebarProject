@@ -4,10 +4,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const fechar = document.getElementById('fechar');
 
     abrir.addEventListener('click', function() {
-        menu.style.display = 'block';
+        menu.classList.toggle('active')
     });
 
     fechar.addEventListener('click', function() {
-        menu.style.display = 'none';
+        menu.classList.remove('active')
     });
 });
