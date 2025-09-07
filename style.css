@@ -3,12 +3,12 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
     transition: background 0.3s, color 0.3s;
 }
 
 #menuLateral {
     background-color: #1c0b2b;
+    color: white;
     width: 300px;
     height: 100vh;
     padding: 20px;
@@ -16,13 +16,15 @@ body {
     position: fixed;
     left: -1000px;
     transition: left 0.5s ease;
+    z-index: 1000;
+    top: 0;
 }
 
-#menuLateral p {
+#menuLateral a {
     cursor: pointer;
 }
 
-#menuLateral p:hover {
+#menuLateral a:hover {
     color: red;
 }
 
@@ -30,6 +32,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 #abrir, #fechar {
@@ -38,11 +41,18 @@ body {
 }
 
 header {
+    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #301c41;
     padding: 0px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    box-sizing: border-box;
 }
 
 header h2 {
@@ -53,6 +63,17 @@ header h2 {
     left: 0;
 }
 
+#opcoes{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+#opcoes a{
+    text-decoration: none;
+    font-size: 18px;
+}
 
 #toggleTheme{
     background-color: white;
@@ -60,10 +81,8 @@ header h2 {
     outline: none;
     width: 15vh;
     height: 3vh;
+    cursor: pointer;
 }
-
-
-
 
 body.dark {
     background-color: #222;
@@ -76,4 +95,60 @@ body.dark #menuLateral {
 
 body.dark header {
     background-color: #1c0b2b;
+}
+
+#container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    padding: 80px;
+}
+
+#textos{
+    width: 600px;
+    text-align: justify;
+}
+
+#img{
+    width: 600px;
+    border-radius: 20px;
+}
+
+#projetosContainer{
+    padding: 80px;
+}
+
+#projetos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 80px;
+}
+
+.imgProjetos{
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #301c41;
+    padding: 40px;
+}
+
+footer p, footer h1{
+    color: white;
+}
+
+.email{
+    color: #9055c4;
+    cursor: pointer;
+}
+
+.email:hover{
+    color: red;
 }
