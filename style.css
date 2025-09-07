@@ -1,42 +1,43 @@
-body{
+body {
     background-color: #e9efff;
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+    transition: background 0.3s, color 0.3s;
 }
 
-#menuLateral{
+#menuLateral {
     background-color: #1c0b2b;
     width: 300px;
     height: 100vh;
     padding: 20px;
+    display: block;
     position: fixed;
     left: -1000px;
     transition: left 0.5s ease;
-    z-index: 1000;
 }
 
-#menuLateral p{
+#menuLateral p {
     cursor: pointer;
 }
 
-#menuLateral p:hover{
+#menuLateral p:hover {
     color: red;
 }
 
-#titulo{
+#titulo {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-#abrir, #fechar{
+#abrir, #fechar {
     cursor: pointer;
     user-select: none;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,10 +45,35 @@ header{
     padding: 0px 20px;
 }
 
-header h2{
+header h2 {
     color: yellow;
 }
 
 #menuLateral.active {
     left: 0;
+}
+
+
+#toggleTheme{
+    background-color: white;
+    border-radius: 9px;
+    outline: none;
+    width: 15vh;
+    height: 3vh;
+}
+
+
+
+
+body.dark {
+    background-color: #222;
+    color: #fff;
+}
+
+body.dark #menuLateral {
+    background-color: #301c41;
+}
+
+body.dark header {
+    background-color: #1c0b2b;
 }
